@@ -14,6 +14,8 @@ We provide the codes in a way that you can perform based on the simulator for "P
 
 
 # How to start a simulation:
+- For phase retrieval, the prior algorithms (e.g., Fienup, Wirtflow, Gerchbergsaxton, Phasemax, PhaseLamp, etal.) can download from
+  https://github.com/tomgoldstein/phasepack-matlab
 
 - Step 1. Download our proposed phase retrieval algorithms (GEC_SR.m & DeGEC_SR.m), which can be found
 
@@ -27,9 +29,6 @@ We provide the codes in a way that you can perform based on the simulator for "P
 
   main_phase_retrieval
   
-- For phase retrieval, the prior algorithms can download from
-https://github.com/tomgoldstein/phasepack-matlab
-
 --------------------------------------------------------------------------------------------------------------------------------------
 The simulator returns a plot of the MSE of iterations for different phase retrieval algorithms.
 <div align=center><img width="600" height="600" src="https://github.com/Wangchangjen/Matlab_deGEC-SR/blob/master/EXAMPLE.png"/></div>
