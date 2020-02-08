@@ -20,17 +20,18 @@ We provide the codes in a way that you can perform based on the simulator for "P
   https://github.com/tomgoldstein/phasepack-matlab
 
 
-- Step 2. Download our proposed phase retrieval algorithms (GEC-SR.m & DeGEC-SR.m), which can be found
+- Step 2. Download our proposed phase retrieval algorithms (GEC_SR.m & DeGEC_SR.m), which can be found
 
   https://github.com/Wangchangjen/Matlab_deGEC-SR
+  
+- Step 3. Matlab add prior algorithms to the folders.
 
-
-- Step 3. In main_phase_retrieval.m, find the line 
+- Step 4. In main_phase_retrieval.m, find the line 
 
   You can select GEC-SR or deGEC-SR based on L. L=1 is GEC-SR and other algorithms. L > 1 is deGEC-SR.
   
 
-- Step 4. Now, you are ready to run the phase retrieval:
+- Step 5. Now, you are ready to run the phase retrieval:
 
   main_phase_retrieval
 
