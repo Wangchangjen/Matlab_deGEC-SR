@@ -24,7 +24,8 @@ We provide the codes in a way that you can perform based on the simulator for "P
 
   https://github.com/Wangchangjen/Matlab_deGEC-SR
   
-- Step 3. Matlab add prior algorithms to the folders.
+- Step 3. Matlab add prior algorithms to the folders. For the phasepack-matlab-master floer, Matlab selected floders and subfolders.
+
 
 - Step 4. In main_phase_retrieval.m, find the line 
 
