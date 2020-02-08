@@ -21,11 +21,13 @@ We provide the codes in a way that you can perform based on the simulator for "P
 
   https://github.com/Wangchangjen/Matlab_deGEC-SR
   
-- Step 2. In main_phase_retrieval.m, find the line 
+- Step 2. Add folders (i.e., Estimation, Operator, Solvers) to the executive directory
+  
+- Step 3. In main_phase_retrieval.m, find the line 
 
   You can select GEC-SR or deGEC-SR based on L. L=1 is GEC-SR and other algorithms. L > 1 is deGEC-SR.
   
-- Step 3. Now, you are ready to run the phase retrieval:
+- Step 4. Now, you are ready to run the phase retrieval:
 
   main_phase_retrieval
   
