@@ -83,14 +83,12 @@ r1_x_new=((x_hat2./eta2_x)-(R_2x.*V_2x)).*gamma_1_x_new;
 V_1x =  1./gamma_1_x_new;
 R_1x = r1_x_new;
 t4=toc;
-%% MRC combination
+
 tic
     [x_hat1, Q_1_x] = gxIn.estim(R_1x, 1./V_1x) ;  
     Q_1_x=max(Q_1_x,eps);
     eta1_x = mean(real(Q_1_x));
 t5=toc;
-
-%----------------------PD_EP----------------------------------
 
 tic
 gamma_2_x_new =eta1_x./(1-eta1_x.*V_1x) ;
