@@ -3,57 +3,38 @@
 
 --------------------------------------------------------------------------------------------------------------------------
 # Information:
-- IDE: Iterative discrete estimation
-- IDE2: Low-complexity version of Iterative discrete estimation
+- GEC-SR: Generalized expectation consistent signal recovery
+- deGEC-SR: Decentralized expectation consistent signal recovery
 
-IDE and IDE2 are efficient algorithms for a downlink massive MU-MIMO system with finite-alphabet precodings. For details, please refer to 
+For phase retrieval, GEC-SR is good performance and deGEC-SR is good efficient algorithm. For details, please refer to 
 
-C. J. Wang, C. K. Wen, S. Jin, and S. H. Tsai, Finite-Alphabet Precoding for Massive MU-MIMO with Low-resolution DACs, IEEE Trans. Wireless Commun., 2018, to appear.
+C. J. Wang, C. K. Wen, S. H. Tsai, and S. Jin, Decentralized Expectation Consistent Signal Recovery for Phase Retrieval, IEEE Trans. signal process., 2020, to appear.
 
-We provide the codes in a way that you can perfrom based on the simulator for "Quantized Precoding for Massive MU-MIMO". Therefore, you can compare severeal different precoding algorithms under the same setting.
+We provide the codes in a way that you can perform based on the simulator for "Phase retrieval". Therefore, you can compare several different phase retrieval algorithms under the same setting.
 
 
 # How to start a simulation:
 
-- Step 1. Download the simulator for "Quantized Precoding for Massive MU-MIMO":
+- Step 1. Download the simulator for "Phase retrieval algorithms":
 
-  https://github.com/quantizedmassivemimo/1bit_precoding
-
-
-- Step 2. Download our proposed precoders (IDE.m & IDE2.m), which can be found
-
-  https://github.com/Wangchangjen/Matlab_IDE
+  https://github.com/tomgoldstein/phasepack-matlab
 
 
-- Step 3. In precoder_sim.m, find the line 
+- Step 2. Download our proposed phase retrieval algorithms (GEC-SR.m & DeGEC-SR.m), which can be found
 
-  par.precoder = … 
+  https://github.com/Wangchangjen/Matlab_deGEC-SR
 
-  Replace the line by
+
+- Step 3. In main_phase_retrieval.m, find the line 
+
+  You can select GEC-SR or deGEC-SR based on L. L=1 is GEC-SR and other algorithms. L > 1 is deGEC-SR.
   
-  par.precoder = {'IDE','SQUID','IDE2','SDR1','SDRr'}; % select precoding scheme(s) to be evaluated
-  
-  
-- Step 4. In precoder_sim.m, find the line
 
-  switch (par.precoder{pp}) 
+- Step 4. Now, you are ready to run the phase retrieval:
 
-  Include the cases
-
-    case 'IDE'
-
-    [x, beta] = IDE(par.s,Hhat,N0);
-
-    case 'IDE2'
-
-    [x, beta] = IDE2(par.s,Hhat,N0);
-
-
-- Step 5. Now, you are ready to run the precodes:
-
-  precoder_sim
+  main_phase_retrieval
 
 --------------------------------------------------------------------------------------------------------------------------------------
-The simulator returns a plot of the BER as a function of the SNR.
+The simulator returns a plot of the MSE of iterations for different phase retrieval algorithms.
 <div align=center><img width="600" height="600" src="https://github.com/Wangchangjen/Matlab_deGEC-SR/blob/master/EXAMPLE.png"/></div>
 
