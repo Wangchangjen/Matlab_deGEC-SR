@@ -15,26 +15,20 @@ We provide the codes in a way that you can perform based on the simulator for "P
 
 # How to start a simulation:
 
-- Step 1. Download the simulator for "Phase retrieval algorithms":
-
-  https://github.com/tomgoldstein/phasepack-matlab
-
-
-- Step 2. Download our proposed phase retrieval algorithms (GEC_SR.m & DeGEC_SR.m), which can be found
+- Step 1. Download our proposed phase retrieval algorithms (GEC_SR.m & DeGEC_SR.m), which can be found
 
   https://github.com/Wangchangjen/Matlab_deGEC-SR
   
-- Step 3. Matlab add prior algorithms to the folders. For the phasepack-matlab-master floer, Matlab selected floders and subfolders.
-
-
-- Step 4. In main_phase_retrieval.m, find the line 
+- Step 2. In main_phase_retrieval.m, find the line 
 
   You can select GEC-SR or deGEC-SR based on L. L=1 is GEC-SR and other algorithms. L > 1 is deGEC-SR.
   
-
-- Step 5. Now, you are ready to run the phase retrieval:
+- Step 3. Now, you are ready to run the phase retrieval:
 
   main_phase_retrieval
+  
+- For phase retrieval, the prior algorithms can download from
+https://github.com/tomgoldstein/phasepack-matlab
 
 --------------------------------------------------------------------------------------------------------------------------------------
 The simulator returns a plot of the MSE of iterations for different phase retrieval algorithms.
